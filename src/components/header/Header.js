@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <Link to="/">Top Movies</Link>
+        <Link to="/">Top Movies & Series </Link>
       </div>
 
       <div className="search-bar">
@@ -30,7 +30,7 @@ const Header = () => {
           <input
             type="text"
             value={term}
-            placeholer="Search for movies or shows"
+            placeholder="Search for movies or shows"
             onChange={(e) => setTerm(e.target.value)}
           />
           <button>
@@ -39,8 +39,8 @@ const Header = () => {
         </form>
       </div>
 
-      <div className="user-image">
-        <img src={movies} alt="user" />
+      <div className="movie-image">
+        <img src={movies} alt="movie" />
       </div>
     </div>
   );

@@ -3,8 +3,6 @@ import { APIKey } from "../shared/api/MovieApiKey";
 import axios from "axios";
 
 const baseURL = "http://www.omdbapi.com";
-// const movieText = "Harry";
-// const seriesText = "Friends";
 
 export const fetchMovies = createAsyncThunk(
   "movies/fetchMovies",
@@ -12,7 +10,6 @@ export const fetchMovies = createAsyncThunk(
     const response = await axios.get(
       `${baseURL}/?apiKey=${APIKey}&s=${term}&type=movie`
     );
-    console.log(response.data);
     return response.data;
   }
 );
@@ -23,7 +20,7 @@ export const fetchShows = createAsyncThunk(
     const response = await axios.get(
       `${baseURL}/?apiKey=${APIKey}&s=${term}&type=series`
     );
-    console.log(response.data);
+
     return response.data;
   }
 );
@@ -34,7 +31,7 @@ export const fetchMovieOrShowDetails = createAsyncThunk(
     const response = await axios.get(
       `${baseURL}/?apiKey=${APIKey}&i=${id}&plot=full`
     );
-    //console.log(response.data);
+
     return response.data;
   }
 );
