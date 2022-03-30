@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { APIKey } from "../shared/api/MovieApiKey";
 import axios from "axios";
 
-const baseURL = "http://www.omdbapi.com";
+const baseURL = "https://www.omdbapi.com";
 
 export const fetchMovies = createAsyncThunk(
   "movies/fetchMovies",
