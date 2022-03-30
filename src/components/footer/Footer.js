@@ -4,7 +4,7 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <div>Top Movies & Series</div>
+      <div>Top Movies & Shows</div>
       <div>©2022</div>
     </div>
   );

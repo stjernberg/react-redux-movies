@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <Link to="/">Top Movies & Series </Link>
+        <Link to="/">Top Movies & Shows </Link>
       </div>
 
       <div className="search-bar">

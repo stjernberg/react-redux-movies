@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  position: relative;
 }
+
 a {
   text-decoration: none;
   color: $font-primary;
@@ -13,10 +15,8 @@ a {
 
 body {
   background: $primary-color;
-  margin: 0;
 }
 .container {
-  //margin: 0px 40px;
-  position: relative;
   padding: 40px;
+  min-height: calc(100vh - 75px);
 }
